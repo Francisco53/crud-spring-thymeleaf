@@ -21,7 +21,7 @@ Este projeto tem como objetivo demonstrar a criação de uma **baseline** para u
 
 ## 📁 Estrutura do Projeto
 
-![Estrutura do Projeto](imagens/Estrutura-do-Projeto.png)
+![Estrutura do Projeto](imagens/Estrutura-do-Projeto.PNG)
 
 
 ## 🗃️ Banco de Dados
@@ -30,7 +30,7 @@ Este projeto tem como objetivo demonstrar a criação de uma **baseline** para u
 - **Console Web:** `http://localhost:8081/h2-console`
 - **JPA + Hibernate** geram o schema automaticamente a partir da entidade `Produto`.
 
-![Propriedades do Banco](imagens/properties.png)
+![Propriedades do Banco](imagens/properties.PNG)
 
 
 
@@ -57,19 +57,19 @@ public class Produto {
 
 A aplicação carrega alguns produtos automaticamente ao iniciar, via `CommandLineRunner`.
 
-![Dados Iniciais](imagens/Dados.png)
+![Dados Iniciais](imagens/Dados.PNG)
 
 
 
 ## 📷 Telas
 
 - Lista de produtos
-![Lista de Produtos](imagens/Lista-de-Produtos.png)
+![Lista de Produtos](imagens/Lista-de-Produtos.PNG)
 - Formulário de cadastro e edição
-![Cadastro de Produto](imagens/Cadastro-de-Produto.png)
+![Cadastro de Produto](imagens/Cadastro-de-Produto.PNG)
 - Mensagens de validação e sucesso
-![Mensagem de Sucesso](imagens/Mensagem-de-sucesso.png)
-![Mensagem de Validação](imagens/Mensagem-de-validação.png)
+![Mensagem de Sucesso](imagens/Mensagem-de-sucesso.PNG)
+![Mensagem de Validação](imagens/Mensagem-de-validação.PNG)
 
 ---
 
