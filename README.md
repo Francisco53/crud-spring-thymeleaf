@@ -21,31 +21,8 @@ Este projeto tem como objetivo demonstrar a criação de uma **baseline** para u
 
 ## 📁 Estrutura do Projeto
 
-```plaintext
-crud/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com.crud.crud/
-│   │   │       ├── controller/
-│   │   │       ├── model/
-│   │   │       ├── repository/
-│   │   │       └── CrudApplication.java
-│   │   └── resources/
-│   │       ├── static/
-│   │       ├── templates/
-│   │       │   ├── index.html
-│   │       │   └── produto/
-│   │       │       ├── listar.html
-│   │       │       └── form.html
-│   │       └── application.properties
-│   └── test/
-│       └── java/...
-├── pom.xml
-└── README.md
-```
+![Estrutura do Projeto](imagens/Estrutura-do-Projeto.png)
 
----
 
 ## 🗃️ Banco de Dados
 
@@ -53,7 +30,9 @@ crud/
 - **Console Web:** `http://localhost:8081/h2-console`
 - **JPA + Hibernate** geram o schema automaticamente a partir da entidade `Produto`.
 
----
+![Estrutura do Projeto](imagens/properties.png)
+
+
 
 ## 📄 Entidade
 
@@ -78,13 +57,19 @@ public class Produto {
 
 A aplicação carrega alguns produtos automaticamente ao iniciar, via `CommandLineRunner`.
 
----
+![Estrutura do Projeto](imagens/Dados.png)
+
+
 
 ## 📷 Telas
 
 - Lista de produtos
+![Estrutura do Projeto](imagens/Lista-de-Produtos.png)
 - Formulário de cadastro e edição
+![Estrutura do Projeto](imagens/Cadastro-de-Produto.png)
 - Mensagens de validação e sucesso
+![Estrutura do Projeto](imagens/Mensagem-de-sucesso.png)
+![Estrutura do Projeto](imagens/Mensagem-de-validação.png)
 
 ---
 
@@ -114,6 +99,58 @@ git clone https://github.com/seu-usuario/crud-spring-thymeleaf.git
 
 ---
 
-## 👨‍💻 Autor
+## Dependências no pom.xml
+
+```java
+<dependencies>
+    <!-- Spring Data JPA para persistência de dados -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    <!-- Spring Boot Starter Thymeleaf para renderização de templates -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+    
+    <!-- Spring Boot Starter Web para criar a aplicação web -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    
+    <!-- Spring Boot DevTools para otimizações durante o desenvolvimento -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <scope>runtime</scope>
+        <optional>true</optional>
+    </dependency>
+    
+    <!-- Banco de dados H2 (em memória, usado para testes e desenvolvimento) -->
+    <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <scope>runtime</scope>
+    </dependency>
+    
+    <!-- Spring Boot Starter Test para testes unitários -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+    
+    <!-- Spring Boot Starter Validation para validações de dados -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+</dependencies>
+```
+
+## 👨‍💻 Autores
 
 Francisco, Suene e Danilo
