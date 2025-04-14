@@ -30,7 +30,7 @@ Este projeto tem como objetivo demonstrar a criação de uma **baseline** para u
 - **Console Web:** `http://localhost:8081/h2-console`
 - **JPA + Hibernate** geram o schema automaticamente a partir da entidade `Produto`.
 
-![Estrutura do Projeto](imagens/properties.png)
+![Propriedades do Banco](imagens/properties.png)
 
 
 
@@ -57,19 +57,19 @@ public class Produto {
 
 A aplicação carrega alguns produtos automaticamente ao iniciar, via `CommandLineRunner`.
 
-![Estrutura do Projeto](imagens/Dados.png)
+![Dados Iniciais](imagens/Dados.png)
 
 
 
 ## 📷 Telas
 
 - Lista de produtos
-![Estrutura do Projeto](imagens/Lista-de-Produtos.png)
+![Lista de Produtos](imagens/Lista-de-Produtos.png)
 - Formulário de cadastro e edição
-![Estrutura do Projeto](imagens/Cadastro-de-Produto.png)
+![Cadastro de Produto](imagens/Cadastro-de-Produto.png)
 - Mensagens de validação e sucesso
-![Estrutura do Projeto](imagens/Mensagem-de-sucesso.png)
-![Estrutura do Projeto](imagens/Mensagem-de-validação.png)
+![Mensagem de Sucesso](imagens/Mensagem-de-sucesso.png)
+![Mensagem de Validação](imagens/Mensagem-de-validação.png)
 
 ---
 
